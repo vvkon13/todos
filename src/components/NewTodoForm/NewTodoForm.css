@@ -1,0 +1,39 @@
+.form {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    border-bottom: 1px solid #c2c1bc;
+    background-color: white;
+}
+.form__btn {
+    border: none;
+    background-color: transparent;
+    color: #5f5c58;
+    width: 13%;
+    max-width: 60px;
+    min-height: 30px;
+    font-size: medium;
+    padding: 0;
+}
+
+.form__input {
+    display: inline-block;
+    width: 100%;
+    min-height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #c2c1bc;
+
+}
+
+@media (max-width:1024px) {
+    .form {
+        font-size: small;
+    }
+    .form__btn {
+        font-size: small;
+    }
+
+}

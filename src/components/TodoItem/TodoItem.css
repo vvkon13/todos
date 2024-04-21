@@ -1,0 +1,40 @@
+.item {
+    display: flex;
+    min-height: 70px;
+    align-items: center;
+    border-bottom: 1px solid #c2c1bc;
+}
+
+.item__checkbox {
+    width: 13%;
+    max-width: 60px;
+    min-height: 30px;
+}
+
+.item__title {
+    font-size: xx-large;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.item__checkbox:checked+.item__title {
+    text-decoration: line-through;
+    color: #c2c1bc;
+}
+
+@media (max-width:1024px) {
+
+    .item {
+        min-height: 50px;
+    }
+
+    .item__checkbox {
+        min-height: 20px;
+    }
+
+    .item__title {
+        font-size: medium;
+    }
+
+}

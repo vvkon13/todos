@@ -1,0 +1,59 @@
+.todos {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    border: 1px solid #c2c1bc;
+    background-color: white;
+}
+
+.todos__list {
+    padding: 0;
+    margin: 0;
+}
+
+.todos__footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px 40px;
+    color: #5f5c58;
+    font-size: medium;
+}
+
+.todos__task-counter {
+    padding: 0;
+    margin: 0;
+}
+
+.todos__task-counter_hiden {
+    visibility: hidden;
+}
+
+.todos__filter {
+    display: flex;
+    gap: 5px;
+}
+
+.todos__btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: #5f5c58;
+    font-size: medium;
+}
+
+@media (max-width:1024px) {
+    .todos__footer {
+        font-size: x-small;
+        padding: 10px 5px;
+        align-items: center;
+    }
+    .todos__filter {
+        flex-direction: column;
+        gap: 3px;
+    }
+    .todos__btn {
+        font-size: smaller;
+    }
+}
