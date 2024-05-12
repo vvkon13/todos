@@ -20,6 +20,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -45,6 +47,9 @@
   },
   "devDependencies": {
     "@types/redux-mock-store": "^1.0.6",
+    "gh-pages": "^6.1.1",
     "redux-mock-store": "^1.5.4"
-  }
+  },
+  "homepage": "https://vvkon13.github.io/todos"
+
 }
